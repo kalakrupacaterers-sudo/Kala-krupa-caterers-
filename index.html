@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Kala Krupa Caterers Bharuch — Premium catering for weddings, parties, corporate events and Gujarati functions.">
+<meta name="description" content="Kala Krupa Caterers Bharuch — Premium Vegetarian Catering for Weddings, Parties, Corporate Events and Functions.">
+
 <meta name="theme-color" content="#09080d">
-<meta name="robots" content="index,follow">
 
 <title>Kala Krupa Caterers | Bharuch</title>
 
@@ -15,12 +15,11 @@
   --bg:#09080d;
   --card:#15141c;
   --gold:#f4c45d;
-  --gold2:#ffd98a;
+  --gold2:#ffe09a;
   --text:#fff;
   --muted:#b9b7c2;
-  --line:#2a2933;
+  --line:#2c2a35;
   --green:#00d95f;
-  --blue:#4da3ff;
 }
 
 *{
@@ -31,7 +30,7 @@
 
 html{
   scroll-behavior:smooth;
-  scroll-padding-top:78px;
+  scroll-padding-top:75px;
 }
 
 body{
@@ -39,12 +38,6 @@ body{
   background:var(--bg);
   color:var(--text);
   line-height:1.6;
-  background-image:
-    radial-gradient(
-      circle at 15% 0%,
-      rgba(244,196,93,.09),
-      transparent 28%
-    );
 }
 
 a{
@@ -57,27 +50,41 @@ a{
 nav{
   position:sticky;
   top:0;
-  z-index:100;
-  background:rgba(9,8,13,.94);
-  backdrop-filter:blur(14px);
+  z-index:1000;
+  background:rgba(9,8,13,.96);
+  backdrop-filter:blur(15px);
   border-bottom:1px solid var(--line);
 }
 
 .navin{
-  max-width:1180px;
+  max-width:1200px;
   margin:auto;
-  padding:15px 20px;
+  padding:10px 18px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:18px;
+  gap:15px;
 }
 
-.logo{
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.brand img{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+}
+
+.brand span{
   font-weight:900;
   color:var(--gold);
-  letter-spacing:1px;
-  font-size:18px;
+  font-size:15px;
+  letter-spacing:.5px;
 }
 
 .navlinks{
@@ -93,38 +100,52 @@ nav{
 /* HERO */
 
 .hero{
-  min-height:82vh;
+  min-height:88vh;
   display:grid;
   place-items:center;
   text-align:center;
-  padding:90px 20px 70px;
+  padding:70px 20px;
+  position:relative;
+  overflow:hidden;
 
   background:
-    radial-gradient(
-      circle at 50% 18%,
-      rgba(244,196,93,.20),
-      transparent 35%
+    linear-gradient(
+      rgba(0,0,0,.72),
+      rgba(0,0,0,.82)
     ),
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(91,57,20,.20),
-      transparent 30%
-    );
+    url("catering-banner.png") center/cover no-repeat;
+}
+
+.heroContent{
+  max-width:900px;
+  position:relative;
+  z-index:2;
+}
+
+.heroLogo{
+  width:125px;
+  height:125px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+  padding:7px;
+  margin-bottom:20px;
+  box-shadow:0 0 45px rgba(244,196,93,.3);
 }
 
 .badge{
   display:inline-block;
-  border:1px solid #8f6b28;
+  border:1px solid #9b752f;
   color:var(--gold2);
   padding:8px 16px;
   border-radius:999px;
   font-size:13px;
-  letter-spacing:.6px;
+  letter-spacing:.8px;
 }
 
 h1{
-  font-size:clamp(42px,9vw,82px);
-  line-height:1.03;
+  font-size:clamp(43px,9vw,86px);
+  line-height:1.02;
   margin:18px 0;
 }
 
@@ -133,13 +154,11 @@ h1{
 }
 
 .hero p{
-  max-width:760px;
+  max-width:780px;
   margin:auto;
-  color:var(--muted);
+  color:#e0dce5;
   font-size:clamp(17px,3vw,22px);
 }
-
-/* BUTTONS */
 
 .btns{
   display:flex;
@@ -151,12 +170,13 @@ h1{
 
 .btn{
   padding:14px 22px;
-  border-radius:12px;
+  border-radius:13px;
   border:1px solid var(--gold);
   font-weight:800;
   display:inline-flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
+  cursor:pointer;
 }
 
 .primary{
@@ -165,20 +185,20 @@ h1{
 }
 
 .secondary{
-  background:transparent;
   color:var(--gold);
+  background:rgba(0,0,0,.25);
 }
 
-.call{
-  border-color:var(--blue);
-  background:rgba(77,163,255,.08);
-  color:#fff;
+.whatsapp{
+  background:var(--green);
+  color:#061108;
+  border-color:var(--green);
 }
 
 /* SECTION */
 
 section{
-  max-width:1150px;
+  max-width:1200px;
   margin:auto;
   padding:75px 20px;
 }
@@ -195,7 +215,7 @@ section{
 
 .title p{
   color:var(--muted);
-  margin-top:8px;
+  margin-top:9px;
   font-size:17px;
 }
 
@@ -208,16 +228,20 @@ section{
 }
 
 .card{
-  background:linear-gradient(145deg,#181820,#101017);
+  background:linear-gradient(145deg,#191820,#101017);
   border:1px solid var(--line);
   border-radius:22px;
-  padding:26px;
+  padding:28px;
   transition:.25s;
 }
 
 .card:hover{
   transform:translateY(-5px);
-  border-color:#8f6b28;
+  border-color:#9b752f;
+}
+
+.icon{
+  font-size:38px;
 }
 
 .card h3{
@@ -228,11 +252,6 @@ section{
 
 .card p{
   color:var(--muted);
-  font-size:16px;
-}
-
-.icon{
-  font-size:36px;
 }
 
 /* MENU */
@@ -244,20 +263,34 @@ section{
 }
 
 .menuitem{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
-  padding:18px;
+  padding:19px;
   background:var(--card);
   border:1px solid var(--line);
   border-radius:16px;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
 }
 
 .menuitem span:last-child{
   color:var(--gold);
   font-weight:900;
-  white-space:nowrap;
+}
+
+/* FEATURE IMAGE */
+
+.feature{
+  margin-top:30px;
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+
+.feature img{
+  width:100%;
+  display:block;
+  max-height:500px;
+  object-fit:cover;
 }
 
 /* GALLERY */
@@ -265,52 +298,55 @@ section{
 .gallery{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:14px;
+  gap:16px;
 }
 
 .photo{
-  min-height:230px;
+  position:relative;
+  min-height:280px;
   border-radius:20px;
-  border:1px solid var(--line);
-  display:flex;
-  align-items:flex-end;
-  padding:18px;
   overflow:hidden;
-
-  background:
-    linear-gradient(
-      180deg,
-      transparent 35%,
-      rgba(0,0,0,.85)
-    ),
-    radial-gradient(
-      circle at 25% 20%,
-      rgba(244,196,93,.25),
-      transparent 28%
-    ),
-    linear-gradient(
-      135deg,
-      #312718,
-      #17161c 55%,
-      #0d0c11
-    );
+  border:1px solid var(--line);
+  background:#111;
 }
 
-.photo strong{
-  font-size:18px;
-}
-
-.photo small{
+.photo img{
+  width:100%;
+  height:100%;
+  min-height:280px;
+  object-fit:cover;
   display:block;
-  color:#d5d2da;
+  transition:.4s;
 }
 
-/* CONTACT */
+.photo:hover img{
+  transform:scale(1.06);
+}
+
+.caption{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:20px;
+  background:linear-gradient(transparent,rgba(0,0,0,.9));
+}
+
+.caption strong{
+  font-size:19px;
+}
+
+.caption small{
+  display:block;
+  color:#ddd;
+}
+
+/* BOOKING */
 
 .contact{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:18px;
+  gap:20px;
 }
 
 .contactbox{
@@ -323,22 +359,8 @@ section{
 .contactbox h3{
   color:var(--gold2);
   font-size:25px;
-  margin-bottom:10px;
+  margin-bottom:15px;
 }
-
-.contactbox p{
-  color:var(--muted);
-  margin:6px 0;
-}
-
-.contact-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:18px;
-}
-
-/* FORM */
 
 .form{
   display:grid;
@@ -358,25 +380,38 @@ textarea{
   outline:none;
 }
 
-textarea{
-  min-height:110px;
-  resize:vertical;
-}
-
 input:focus,
 select:focus,
 textarea:focus{
   border-color:var(--gold);
 }
 
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
 .form button{
-  cursor:pointer;
   border:0;
 }
 
 .form-note{
-  font-size:13px;
   color:var(--muted);
+  font-size:13px;
+}
+
+/* CONTACT */
+
+.contactbox p{
+  color:var(--muted);
+  margin:8px 0;
+}
+
+.contact-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
 }
 
 /* HOW IT WORKS */
@@ -388,17 +423,17 @@ textarea:focus{
 }
 
 .step{
-  padding:24px;
-  border:1px solid var(--line);
+  padding:25px;
   background:var(--card);
+  border:1px solid var(--line);
   border-radius:20px;
 }
 
 .step b{
   display:grid;
   place-items:center;
-  width:42px;
-  height:42px;
+  width:44px;
+  height:44px;
   border-radius:50%;
   background:var(--gold);
   color:#17120a;
@@ -406,8 +441,8 @@ textarea:focus{
 }
 
 .step h3{
-  margin-bottom:6px;
   color:var(--gold2);
+  margin-bottom:6px;
 }
 
 .step p{
@@ -419,40 +454,44 @@ textarea:focus{
 footer{
   text-align:center;
   border-top:1px solid var(--line);
-  padding:28px 20px;
+  padding:32px 20px;
   color:var(--muted);
+}
+
+footer strong{
+  color:var(--gold);
 }
 
 /* FLOATING WHATSAPP */
 
 .float{
   position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:120;
+  right:17px;
+  bottom:17px;
+  z-index:1500;
   background:var(--green);
-  color:#07100a;
-  padding:15px 20px;
+  color:#061108;
+  padding:14px 20px;
   border-radius:999px;
   font-weight:900;
-  box-shadow:0 10px 35px rgba(0,0,0,.35);
+  box-shadow:0 10px 35px rgba(0,0,0,.45);
 }
 
-/* TOP BUTTON */
+/* TOP */
 
 .top{
   position:fixed;
   right:18px;
-  bottom:78px;
-  z-index:119;
+  bottom:76px;
+  z-index:1400;
   width:44px;
   height:44px;
-  border:1px solid var(--gold);
-  background:#111018;
-  color:var(--gold);
   border-radius:50%;
   display:grid;
   place-items:center;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  background:#111018;
 }
 
 /* MOBILE */
@@ -461,6 +500,24 @@ footer{
 
   .navlinks{
     display:none;
+  }
+
+  .brand span{
+    font-size:13px;
+  }
+
+  .brand img{
+    width:42px;
+    height:42px;
+  }
+
+  .hero{
+    min-height:82vh;
+  }
+
+  .heroLogo{
+    width:105px;
+    height:105px;
   }
 
   .grid,
@@ -475,17 +532,20 @@ footer{
   }
 
   section{
-    padding:58px 20px;
+    padding:58px 18px;
   }
 
-  .hero{
-    min-height:78vh;
-    padding-top:80px;
+  .photo{
+    min-height:330px;
+  }
+
+  .photo img{
+    min-height:330px;
   }
 
   .float{
-    right:14px;
-    bottom:14px;
+    right:13px;
+    bottom:13px;
     padding:13px 17px;
   }
 }
@@ -499,22 +559,17 @@ footer{
 <nav>
   <div class="navin">
 
-    <a class="logo" href="#home">
-      KALA KRUPA CATERERS
+    <a class="brand" href="#home">
+      <img src="logo.png" alt="Kala Krupa Caterers Logo">
+      <span>KALA KRUPA CATERERS</span>
     </a>
 
     <div class="navlinks">
-
       <a href="#services">Services</a>
-
       <a href="#menu">Menu</a>
-
       <a href="#gallery">Gallery</a>
-
       <a href="#booking">Booking</a>
-
       <a href="#contact">Contact</a>
-
     </div>
 
   </div>
@@ -525,10 +580,15 @@ footer{
 
 <header class="hero" id="home">
 
-  <div>
+  <div class="heroContent">
+
+    <img
+      class="heroLogo"
+      src="logo.png"
+      alt="Kala Krupa Caterers">
 
     <div class="badge">
-      PREMIUM CATERING • BHARUCH
+      PREMIUM VEGETARIAN CATERING • BHARUCH
     </div>
 
     <h1>
@@ -537,8 +597,9 @@ footer{
     </h1>
 
     <p>
-      લગ્ન, પાર્ટી, ફંક્શન અને દરેક ખાસ પ્રસંગ માટે
-      સ્વાદિષ્ટ ભોજન અને professional catering service.
+      લગ્ન, પાર્ટી, રિસેપ્શન, કોર્પોરેટ ઇવેન્ટ
+      અને દરેક ખાસ પ્રસંગ માટે સ્વાદિષ્ટ ભોજન
+      અને professional catering service.
     </p>
 
     <div class="btns">
@@ -548,14 +609,14 @@ footer{
       </a>
 
       <a
-        class="btn secondary"
+        class="btn whatsapp"
         href="https://wa.me/919726266230?text=Namaste%20Kala%20Krupa%20Caterers,%20mane%20catering%20mate%20enquiry%20karvi%20che."
         target="_blank">
         💬 WhatsApp
       </a>
 
       <a
-        class="btn call"
+        class="btn secondary"
         href="tel:+919726266230">
         📞 Call Now
       </a>
@@ -578,7 +639,7 @@ footer{
     </h2>
 
     <p>
-      તમારા પ્રસંગ પ્રમાણે customized catering.
+      તમારા પ્રસંગ પ્રમાણે customized catering service.
     </p>
 
   </div>
@@ -592,8 +653,8 @@ footer{
       <h3>Wedding Catering</h3>
 
       <p>
-        લગ્ન અને રિસેપ્શન માટે customized menu
-        અને professional service.
+        લગ્ન, રિસેપ્શન અને સગાઈ માટે
+        customized menu અને professional service.
       </p>
 
     </article>
@@ -647,7 +708,6 @@ footer{
 
   </div>
 
-
   <div class="menu">
 
     <div class="menuitem">
@@ -682,6 +742,14 @@ footer{
 
   </div>
 
+  <div class="feature">
+
+    <img
+      src="snacks-menu.png"
+      alt="Kala Krupa Caterers Snacks Menu"
+      loading="lazy">
+
+  </div>
 
   <div class="btns">
 
@@ -689,8 +757,38 @@ footer{
       class="btn primary"
       href="https://wa.me/919726266230?text=Namaste,%20mara%20function%20mate%20menu%20ane%20rate%20moklo."
       target="_blank">
-      🍽️ Menu માટે WhatsApp
+
+      🍽️ Complete Menu માટે WhatsApp
+
     </a>
+
+  </div>
+
+</section>
+
+
+<!-- NAVRATRI -->
+
+<section>
+
+  <div class="title">
+
+    <h2>
+      🌺 <span class="gold">Navratri</span> Special
+    </h2>
+
+    <p>
+      નવરાત્રી નાસ્તા અને special catering menu
+    </p>
+
+  </div>
+
+  <div class="feature">
+
+    <img
+      src="navratri.png"
+      alt="Kala Krupa Caterers Navratri Special"
+      loading="lazy">
 
   </div>
 
@@ -708,7 +806,7 @@ footer{
     </h2>
 
     <p>
-      Food, events અને premium catering setup.
+      Kala Krupa Caterers ના real food, service અને event visuals.
     </p>
 
   </div>
@@ -717,46 +815,109 @@ footer{
   <div class="gallery">
 
     <div class="photo">
-      <div>
-        <strong>Gujarati Food</strong>
-        <small>Traditional taste</small>
+
+      <img
+        src="catering-banner.png"
+        alt="Kala Krupa Caterers Catering"
+        loading="lazy">
+
+      <div class="caption">
+        <strong>Premium Catering</strong>
+        <small>Wedding & Functions</small>
       </div>
+
     </div>
 
-    <div class="photo">
-      <div>
-        <strong>Wedding Setup</strong>
-        <small>Premium event catering</small>
-      </div>
-    </div>
 
     <div class="photo">
-      <div>
-        <strong>Live Counter</strong>
-        <small>Freshly served food</small>
+
+      <img
+        src="chef-service.png"
+        alt="Kala Krupa Caterers Chef Service"
+        loading="lazy">
+
+      <div class="caption">
+        <strong>Professional Service</strong>
+        <small>Experienced Catering Team</small>
       </div>
+
     </div>
 
-    <div class="photo">
-      <div>
-        <strong>Gujarati Thali</strong>
-        <small>Complete meal experience</small>
-      </div>
-    </div>
 
     <div class="photo">
-      <div>
-        <strong>Party Catering</strong>
-        <small>Family & corporate events</small>
+
+      <img
+        src="buffet.png"
+        alt="Kala Krupa Caterers Buffet"
+        loading="lazy">
+
+      <div class="caption">
+        <strong>Delicious Food</strong>
+        <small>Food for Every Occasion</small>
       </div>
+
     </div>
 
+
     <div class="photo">
-      <div>
-        <strong>Special Menu</strong>
-        <small>Customized for your event</small>
+
+      <img
+        src="catering-promo.png"
+        alt="Kala Krupa Caterers Events"
+        loading="lazy">
+
+      <div class="caption">
+        <strong>All Types of Functions</strong>
+        <small>Gujarati • Punjabi • South Indian • Chinese</small>
       </div>
+
     </div>
+
+
+    <div class="photo">
+
+      <img
+        src="vegetarian-service.png"
+        alt="Kala Krupa Caterers Vegetarian Service"
+        loading="lazy">
+
+      <div class="caption">
+        <strong>Vegetarian Cooking Service</strong>
+        <small>Fresh & Quality Food</small>
+      </div>
+
+    </div>
+
+
+    <div class="photo">
+
+      <img
+        src="snacks-menu.png"
+        alt="Kala Krupa Caterers Snacks"
+        loading="lazy">
+
+      <div class="caption">
+        <strong>Special Snacks</strong>
+        <small>Samosa • Kachori • Pattice & More</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BRAND BANNER -->
+
+<section>
+
+  <div class="feature">
+
+    <img
+      src="catering-promo.png"
+      alt="Kala Krupa Caterers Bharuch"
+      loading="lazy">
 
   </div>
 
@@ -784,9 +945,7 @@ footer{
 
     <div class="contactbox">
 
-      <h3>
-        📋 Quick Booking
-      </h3>
+      <h3>📋 Quick Booking</h3>
 
       <form class="form" id="bookingForm">
 
@@ -809,25 +968,19 @@ footer{
           </option>
 
           <option>Wedding</option>
-
           <option>Reception</option>
-
           <option>Birthday Party</option>
-
           <option>Corporate Event</option>
-
           <option>Family Function</option>
-
+          <option>Navratri Function</option>
           <option>Other</option>
 
         </select>
-
 
         <input
           id="date"
           type="date"
           required>
-
 
         <input
           id="guests"
@@ -836,27 +989,22 @@ footer{
           placeholder="કેટલા મહેમાન? *"
           required>
 
-
         <textarea
           id="message"
-          placeholder="Menu / location / special requirement">
+          placeholder="Menu / Location / Special Requirement">
         </textarea>
 
-
         <button
-          class="btn primary"
+          class="btn whatsapp"
           type="submit">
 
           📲 WhatsApp પર Enquiry મોકલો
 
         </button>
 
-
         <div class="form-note">
-
-          તમારી માહિતી WhatsApp message તરીકે
-          9726266230 પર તૈયાર થશે.
-
+          તમારી enquiry WhatsApp પર 9726266230
+          માટે તૈયાર થશે.
         </div>
 
       </form>
@@ -868,18 +1016,17 @@ footer{
 
     <div class="contactbox" id="contact">
 
-      <h3>
-        📞 Contact Kala Krupa
-      </h3>
+      <h3>📞 Contact Kala Krupa</h3>
+
+      <p>📍 Bharuch, Gujarat</p>
+
+      <p>📱 9726266230</p>
+
+      <p>📱 9724666230</p>
 
       <p>
-        📍 Bharuch, Gujarat
+        🍽️ Premium Vegetarian Catering
       </p>
-
-      <p>
-        📱 9726266230
-      </p>
-
 
       <div class="contact-actions">
 
@@ -887,14 +1034,13 @@ footer{
           class="btn primary"
           href="tel:+919726266230">
 
-          📞 Call 9726266230
+          📞 Call Now
 
         </a>
 
-
         <a
-          class="btn secondary"
-          href="https://wa.me/919726266230?text=Namaste%20Kala%20Krupa%20Caterers,%20mane%20catering%20mate%20information%20joie%20che."
+          class="btn whatsapp"
+          href="https://wa.me/919726266230"
           target="_blank">
 
           💬 WhatsApp
@@ -933,13 +1079,11 @@ footer{
 
       <b>1</b>
 
-      <h3>
-        Enquiry
-      </h3>
+      <h3>Enquiry</h3>
 
       <p>
         તમારી event date, guests અને
-        requirement મોકલો.
+        requirement WhatsApp પર મોકલો.
       </p>
 
     </div>
@@ -949,9 +1093,7 @@ footer{
 
       <b>2</b>
 
-      <h3>
-        Menu & Quote
-      </h3>
+      <h3>Menu & Quote</h3>
 
       <p>
         તમારી જરૂરિયાત પ્રમાણે menu અને
@@ -965,9 +1107,7 @@ footer{
 
       <b>3</b>
 
-      <h3>
-        Event Day
-      </h3>
+      <h3>Event Day</h3>
 
       <p>
         Final confirmation પછી
@@ -985,17 +1125,15 @@ footer{
 
 <footer>
 
-  <strong>
-    KALA KRUPA CATERERS
-  </strong>
+  <strong>KALA KRUPA CATERERS</strong>
 
   <br>
 
-  Premium Catering • Bharuch
+  Premium Vegetarian Catering • Bharuch
 
   <br>
 
-  📞 9726266230
+  📞 9726266230 / 9724666230
 
   <br><br>
 
@@ -1030,8 +1168,6 @@ footer{
 </a>
 
 
-<!-- JAVASCRIPT -->
-
 <script>
 
 document.getElementById("year").textContent =
@@ -1039,53 +1175,59 @@ document.getElementById("year").textContent =
 
 
 document
-  .getElementById("bookingForm")
-  .addEventListener("submit",function(e){
+.getElementById("bookingForm")
+.addEventListener("submit", function(e){
 
-    e.preventDefault();
+  e.preventDefault();
 
-    const name =
-      document.getElementById("name").value.trim();
+  const name =
+    document.getElementById("name").value.trim();
 
-    const phone =
-      document.getElementById("phone").value.trim();
+  const phone =
+    document.getElementById("phone").value.trim();
 
-    const event =
-      document.getElementById("event").value;
+  const event =
+    document.getElementById("event").value;
 
-    const date =
-      document.getElementById("date").value;
+  const date =
+    document.getElementById("date").value;
 
-    const guests =
-      document.getElementById("guests").value;
+  const guests =
+    document.getElementById("guests").value;
 
-    const message =
-      document.getElementById("message").value.trim();
-
-
-    const text =
-`*Kala Krupa Caterers - Booking Enquiry*
-
-Name: ${name}
-
-Mobile: ${phone}
-
-Event: ${event}
-
-Date: ${date}
-
-Guests: ${guests}
-
-Requirement: ${message || "Not specified"}`;
+  const message =
+    document.getElementById("message").value.trim();
 
 
-    window.open(
-      "https://wa.me/919726266230?text="
-      + encodeURIComponent(text),
-      "_blank"
-    );
+  const text =
+`🌟 KALA KRUPA CATERERS - BOOKING ENQUIRY 🌟
 
-  });
+👤 Name: ${name}
+
+📱 Mobile: ${phone}
+
+🎉 Event: ${event}
+
+📅 Date: ${date}
+
+👥 Guests: ${guests}
+
+🍽️ Requirement:
+${message || "Not specified"}
+
+📍 Bharuch
+
+Please share menu & quotation.`;
+
+
+  const url =
+    "https://wa.me/919726266230?text="
+    + encodeURIComponent(text);
+
+
+  window.open(url, "_blank");
+
+});
 
 </script>
 
